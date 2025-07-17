@@ -1,0 +1,25 @@
+.footer {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.footer-link:hover {
+  color: var(--bs-primary);
+  text-decoration: underline;
+}
+
+.text-icon {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.text-icon:hover {
+  color: var(--bs-primary);
+}

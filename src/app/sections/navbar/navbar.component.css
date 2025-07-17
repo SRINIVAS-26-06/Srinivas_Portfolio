@@ -1,0 +1,44 @@
+/* Ensure space below navbar to prevent overlap with content */
+body {
+  padding-top: 70px;
+}
+
+/* Style the navbar brand (your name/logo) */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+/* Add spacing between nav links */
+.nav-link {
+  margin-right: 1rem;
+  transition: color 0.3s;
+}
+
+/* Hover effect for links */
+.nav-link:hover {
+  color: var(--btn-bg);
+}
+
+/* Theme toggle button spacing */
+.theme-toggle-btn {
+  margin-left: 1rem;
+}
+
+/* Make navbar responsive */
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .nav-link {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .theme-toggle-btn {
+    margin-left: 0;
+  }
+}

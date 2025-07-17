@@ -1,0 +1,11 @@
+.cert-card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}

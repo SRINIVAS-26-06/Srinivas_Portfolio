@@ -1,0 +1,43 @@
+/* Hero section background & spacing */
+#hero {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Profile image styling */
+.hero-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.4);
+}
+
+/* Typography and layout */
+#hero h1 {
+  font-size: 2.5rem;
+}
+
+#hero .text-primary {
+  color: var(--btn-bg);
+}
+
+@media (min-width: 768px) {
+  #hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero-img {
+    width: 280px;
+    height: 280px;
+  }
+}

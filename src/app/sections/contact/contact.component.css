@@ -1,0 +1,16 @@
+.contact-card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-card a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+  color: var(--bs-primary);
+}

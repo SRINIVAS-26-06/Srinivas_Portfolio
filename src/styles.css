@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth;
+}
+/* Light Theme (default) */
+.light-theme {
+  --bg-color: #ffffff;
+  --text-color: #212529;
+  --card-bg: #f8f9fa;
+  --btn-bg: #0d6efd;
+  --btn-text: #ffffff;
+}
+
+/* Dark Theme */
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #f8f9fa;
+  --card-bg: #1e1e1e;
+  --btn-bg: #0dcaf0;
+  --btn-text: #000000;
+}
+
+/* Apply theme variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+}
+
+section {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Make sure all content areas use theme */
+.card, .container, .navbar, footer {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+:root {
+  --card-bg: #ffffff;
+  --text-color: #000000;
+  --icon-color: #000000;
+}
+
+.dark-theme {
+  --card-bg: #1e1e1e;
+  --text-color: #ffffff;
+  --icon-color: #ffffff;
+}
+:root {
+  --card-bg: #fff;
+  --text-color: #212529;
+}
+
+body.dark-theme {
+  --card-bg: #1e1e2f;
+  --text-color: #f1f1f1;
+}

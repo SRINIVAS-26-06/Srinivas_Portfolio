@@ -1,0 +1,91 @@
+/* Section Spacing & Text */
+#about {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+h2 {
+  font-weight: 700;
+}
+
+/* Rotating Icon Animation Container */
+.animation-container {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Wrapper for Positioning Icons */
+.icon-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Individual Icons */
+.rotating-icon {
+  position: absolute;
+  font-size: 32px;
+  transition: transform 0.2s ease-out;
+}
+
+/* Specific Icon Styling */
+.react-icon {
+  color: #61dbfb;
+}
+
+.node-icon {
+  color: #8cc84b;
+}
+
+.express-icon {
+  color: #eeeeee;
+}
+
+.mongodb-icon {
+  color: #4db33d;
+}
+
+.database-icon {
+  color: #f39c12;
+}
+
+/* Glowing Center Circle */
+.glowing-center {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(14,1,38,0) 80%);
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: glow-pulse 2s infinite alternate;
+}
+
+/* Glow Animation */
+@keyframes glow-pulse {
+  from {
+    box-shadow: 0 0 10px rgba(255,255,255,0.6);
+  }
+  to {
+    box-shadow: 0 0 40px rgba(255,255,255,1);
+  }
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .animation-container {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 2rem;
+  }
+
+  .rotating-icon {
+    font-size: 28px;
+  }
+}
