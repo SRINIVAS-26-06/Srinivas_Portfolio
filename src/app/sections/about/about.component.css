@@ -1,91 +1,105 @@
-/* Section Spacing & Text */
+/* Section Styling */
 #about {
-  color: var(--text-color);
-  background-color: var(--bg-color);
+  background: linear-gradient(135deg, #0a0f1f, #101820);
+  color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  padding: 4rem 2rem;
 }
 
-h2 {
-  font-weight: 700;
+/* Bluish glowing effect */
+#about::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 320px;
+  background: rgba(13, 110, 253, 0.25);
+  filter: blur(140px);
+  border-radius: 50%;
+  z-index: 0;
+}
+#about .row {
+  position: relative;
+  z-index: 1;
 }
 
-/* Rotating Icon Animation Container */
+/* Scroll Animations */
+#about h2, #about p, #about a, .animation-container {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+#about h2.visible, #about p.visible, #about a.visible, .animation-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Rotating Icon Setup */
 .animation-container {
   position: relative;
-  width: 240px;
-  height: 240px;
+  width: 260px;
+  height: 260px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
-/* Wrapper for Positioning Icons */
-.icon-wrapper {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-/* Individual Icons */
+.icon-wrapper { position: absolute; width: 100%; height: 100%; }
 .rotating-icon {
   position: absolute;
-  font-size: 32px;
+  top: 50%;
+  left: 50%;
+  font-size: 40px;
+  transform: translate(-50%, -50%);
   transition: transform 0.2s ease-out;
 }
 
-/* Specific Icon Styling */
-.react-icon {
-  color: #61dbfb;
-}
+/* Icon Colors */
+.react-icon { color: #61dbfb; }
+.node-icon { color: #68a063; }
+.mongodb-icon { color: #4db33d; }
+.angular-icon { color: #dd0031; }
+.database-icon { color: #f39c12; }
+.springboot-icon svg { fill: #6db33f; }
 
-.node-icon {
-  color: #8cc84b;
-}
-
-.express-icon {
-  color: #eeeeee;
-}
-
-.mongodb-icon {
-  color: #4db33d;
-}
-
-.database-icon {
-  color: #f39c12;
-}
-
-/* Glowing Center Circle */
+/* Center Glow */
 .glowing-center {
   position: absolute;
-  width: 60px;
-  height: 60px;
-  background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(14,1,38,0) 80%);
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(0,123,255,0) 80%);
   border-radius: 50%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  left: 50%; top: 50%;
+  transform: translate(-10%, -10%);
   animation: glow-pulse 2s infinite alternate;
 }
-
-/* Glow Animation */
 @keyframes glow-pulse {
-  from {
-    box-shadow: 0 0 10px rgba(255,255,255,0.6);
-  }
-  to {
-    box-shadow: 0 0 40px rgba(255,255,255,1);
-  }
+  from { box-shadow: 0 0 15px rgba(0,123,255,0.6); }
+  to   { box-shadow: 0 0 40px rgba(0,123,255,1); }
 }
 
-/* Responsive Fixes */
+/* Resume Button Custom */
+.resume-btn {
+  background: linear-gradient(90deg, #0d6efd, #1f9dff);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.resume-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.5);
+}
+
+/* Responsiveness */
 @media (max-width: 768px) {
   .animation-container {
     width: 200px;
     height: 200px;
     margin-bottom: 2rem;
   }
-
-  .rotating-icon {
-    font-size: 28px;
-  }
+  .rotating-icon { font-size: 30px; }
 }

@@ -1,19 +1,107 @@
+#achievements {
+  background: linear-gradient(135deg, #121212, #1c1c1c);
+  color: #f8f9fa;
+  padding-bottom: 3rem;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+#achievements::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 250px;
+  background: rgba(13, 110, 253, 0.15);
+  filter: blur(80px);
+  z-index: 0;
+  border-radius: 30px;
+}
+
+#achievements .row {
+  position: relative;
+  z-index: 1;
+}
+
+#achievements h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  position: relative;
+  z-index: 1;
+}
+#achievements h2.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Card styles */
 .achievement-card {
-  background-color: var(--card-bg);
-  color: var(--text-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+  color: #e0e0e0;
+  border-radius: 16px;
+  padding: 1rem;
+  text-align: center;
+  overflow: hidden;
+  opacity: 0;
+  transition: transform 1.5s ease-out, opacity 0.5s ease-out;
+  max-width: 360px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px;
+}
+
+#achievements .row > div {
+  display: flex;
+}
+
+/* Scroll animations */
+.from-right { transform: translateX(200px); }
+.from-left { transform: translateX(-200px); }
+.from-bottom { transform: translateY(200px); }
+.achievement-card.visible {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
+/* Card image */
+.card-img-top {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
+  margin-bottom: 1rem;
   border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px;
 }
 
-.achievement-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+/* Titles */
+.card-title {
+  color: #0d6efd;
+  font-size: 1.25rem;
+}
+.card-text {
+  font-size: 0.9rem;
+  color: #adb5bd;
 }
 
-.card img {
-  transition: transform 0.2s ease-in-out;
+/* Small badges in LeetCode card */
+.small-badge {
+  max-height: 70px;
 }
 
-.card img:hover {
-  transform: scale(1.05);
+/* Responsive */
+@media (max-width: 767px) {
+  #achievements h2 { font-size: 1.8rem; }
+  .card-title { font-size: 1.1rem; }
 }

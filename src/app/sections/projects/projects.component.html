@@ -1,20 +1,44 @@
-<section id="projects" class="container-fluid py-5">
-  <h2 class="text-center fw-bold mb-5">Projects</h2>
+<section id="projects" class="projects-section container-fluid py-5">
+  <h2 class="text-center fw-bold mb-5 text-white">Projects</h2>
 
   <div class="row g-4">
     <!-- Project Card Example -->
     <div class="col-md-6 col-lg-4" *ngFor="let project of projects">
       <div class="card h-100 shadow-sm border-0 project-card">
-        <img [src]="project.image" class="card-img-top" [alt]="project.title" style="height: 230px; object-fit: cover;" />
+        <img
+          [src]="project.image"
+          class="card-img-top"
+          [alt]="project.title"
+          style="height: 230px; object-fit: cover; border-radius: 10px 10px 0 0;"
+        />
         <div class="card-body d-flex flex-column">
           <h5 class="card-title fw-bold">{{ project.title }}</h5>
           <p class="card-text">{{ project.description }}</p>
-          <ul>
-            <li *ngFor="let tech of project.technologies">{{ tech }}</li>
-          </ul>
+
+          <!-- Tech stack as badges -->
+          <div class="mb-3">
+            <span
+              class="badge tech-badge me-1 mb-1"
+              *ngFor="let tech of project.technologies"
+            >
+              {{ tech }}
+            </span>
+          </div>
+
           <div class="mt-auto d-flex justify-content-between">
-            <a [href]="project.github" target="_blank" class="btn btn-outline-primary btn-sm">GitHub</a>
-            <a *ngIf="project.demo" [href]="project.demo" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
+            <a
+              [href]="project.github"
+              target="_blank"
+              class="btn btn-outline-primary btn-sm"
+              >GitHub</a
+            >
+            <a
+              *ngIf="project.demo"
+              [href]="project.demo"
+              target="_blank"
+              class="btn btn-primary btn-sm"
+              >Live Demo</a
+            >
           </div>
         </div>
       </div>

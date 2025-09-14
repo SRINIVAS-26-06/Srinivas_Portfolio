@@ -1,46 +1,55 @@
-
 <section id="about" class="container-fluid py-5">
   <div class="row align-items-center gy-4">
-    <!-- Animated Tech Icons (Left Side) -->
-    <div class="col-lg-5 text-center">
+    
+    <!-- Rotating MERN + Angular Icons -->
+    <div class="col-lg-5">
       <div class="animation-container position-relative">
         <div class="icon-wrapper">
-          <i class="bi bi-react rotating-icon react-icon"></i>
-          <i class="bi bi-node-plus rotating-icon node-icon"></i>
-          <i class="bi bi-server rotating-icon express-icon"></i>
-          <i class="bi bi-database-fill rotating-icon database-icon"></i>
-          <i class="bi bi-cloud-arrow-up rotating-icon mongodb-icon"></i>
+          <fa-icon [icon]="faReact" class="rotating-icon react-icon"></fa-icon>
+          <fa-icon [icon]="faNodeJs" class="rotating-icon node-icon"></fa-icon>
+          <fa-icon [icon]="faLeaf" class="rotating-icon mongodb-icon"></fa-icon>
+          <fa-icon [icon]="faAngular" class="rotating-icon angular-icon"></fa-icon>
+          <fa-icon [icon]="faDatabase" class="rotating-icon database-icon"></fa-icon>
+
+          <!-- Custom Spring Boot SVG -->
+          <div class="rotating-icon springboot-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="40" height="40">
+              <g fill="#6db33f">
+                <path d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64c35.3 0 64-28.7 64-64S99.3 0 64 0zm21.9 97.6c-1.4 3.5-4.9 5.7-8.6 5.7H50.7c-3.7 0-7.1-2.2-8.6-5.7L25.3 64l16.8-33.6c1.4-3.5 4.9-5.7 8.6-5.7h26.6c3.7 0 7.1 2.2 8.6 5.7L102.7 64l-16.8 33.6z"/>
+              </g>
+            </svg>
+          </div>
         </div>
         <div class="glowing-center"></div>
       </div>
     </div>
 
-    <!-- Description (Right Side) -->
+    <!-- About Content -->
     <div class="col-lg-7">
       <h2 class="fw-bold mb-3">About Me</h2>
       <p class="lead">
-        Hello! I’m <strong>Y Srinivas Reddy</strong>, a passionate full-stack developer currently in my 4th year of B.Tech. My journey began with a deep curiosity about how websites function, which evolved into a commitment to building seamless, interactive digital experiences.
+        Hello! I’m <strong>Y Srinivas Reddy</strong>, a passionate full-stack developer currently in my 4th year of B.Tech. 
+        My journey began with curiosity about how websites function, evolving into building seamless digital experiences.
       </p>
       <p>
-        I specialize in both front-end and back-end development, crafting responsive and scalable applications. On the front end, I focus on intuitive UI/UX using HTML, CSS, and JavaScript, ensuring a smooth user experience. On the back end, I develop robust server-side architectures with modern frameworks and databases.
+        I specialize in the <strong>MERN stack and Angular</strong>, crafting responsive frontends and scalable backends. 
+        With MongoDB, Express, React, Node.js, and Angular, I bring end-to-end solutions to life.
       </p>
       <p>
-        I believe in continuous learning and staying updated with emerging technologies, allowing me to bring innovation and efficiency to every project. Beyond coding, I enjoy exploring new tech, participating in hackathons, and collaborating with like-minded developers.
+        Beyond coding, I explore new tech, participate in hackathons, and mentor peers in full-stack development.
       </p>
-      <p class="mb-0">
-        Let’s connect and create something impactful together!
-      </p>
+      <p class="mb-0">Let’s connect and create something impactful together!</p>
 
       <!-- Resume + Socials -->
       <div class="mt-4">
-        <a href="assets/resume/SrinivasResume.pdf" target="_blank" class="btn btn-primary me-3">
-          <i class="bi bi-download me-1"></i> Download Resume
+        <a href="assets/resume/SrinivasResume.pdf" target="_blank" class="btn resume-btn me-3">
+          <fa-icon [icon]="faDownload" class="me-1"></fa-icon> Download Resume
         </a>
-        <a href="https://github.com/SRINIVAS-26-06" target="_blank" class="btn btn-outline-dark me-2" aria-label="GitHub">
-          <i class="bi bi-github"></i>
+        <a href="https://github.com/SRINIVAS-26-06" target="_blank" class="btn btn-outline-light me-2">
+          <fa-icon [icon]="faGithub"></fa-icon>
         </a>
-        <a href="https://www.linkedin.com/in/srinivas-reddy-yamasani-5a64952b3/" target="_blank" class="btn btn-outline-primary me-2" aria-label="LinkedIn">
-          <i class="bi bi-linkedin"></i>
+        <a href="https://www.linkedin.com/in/srinivas-reddy-yamasani-5a64952b3/" target="_blank" class="btn btn-outline-primary me-2">
+          <fa-icon [icon]="faLinkedin"></fa-icon>
         </a>
       </div>
     </div>

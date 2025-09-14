@@ -1,100 +1,54 @@
-<section id="skills" class="container-fluid py-5">
+<section id="skills" class="skills-section container-fluid py-5">
   <h2 class="text-center mb-5 fw-bold">Skills & Technologies</h2>
 
   <!-- Frontend -->
-  <div class="mb-4">
-    <h4 class="fw-semibold mb-3 text-primary">Frontend</h4>
-    <div class="row g-3">
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="HTML" img="/assets/skills/html5.svg"></app-skill-card>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="CSS" img="/assets/skills/css.svg"></app-skill-card>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="JavaScript" img="/assets/skills/javascript.svg"></app-skill-card>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="React.js" img="/assets/skills/react.svg"></app-skill-card>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="Angular" img="/assets/skills/angular.svg"></app-skill-card>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="TailwindCSS" img="/assets/skills/tailwindcss.svg"></app-skill-card>
-      </div>
+  <div class="mb-5 fade-in">
+    <h4 class="fw-semibold mb-3">Frontend</h4>
+    <div class="d-flex flex-wrap gap-3">
+      <span class="badge skill-badge">HTML</span>
+      <span class="badge skill-badge">CSS</span>
+      <span class="badge skill-badge">JavaScript</span>
+      <span class="badge skill-badge">React.js</span>
+      <span class="badge skill-badge">Angular</span>
+      <span class="badge skill-badge">TailwindCSS</span>
     </div>
   </div>
 
   <!-- Backend -->
-  <div class="mb-4">
-    <h4 class="fw-semibold mb-3 text-primary">Backend</h4>
-    <div class="row g-3">
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="Java" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"></app-skill-card>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="Spring Boot" img="/assets/skills/springboot.svg"></app-skill-card>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="Spring Security" img="/assets/skills/springsecurity.svg"></app-skill-card>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="Node.js" img="/assets/skills/nodedotjs.svg"></app-skill-card>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="Express.js" img="/assets/skills/express.svg"></app-skill-card>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="Python" img="/assets/skills/python.svg"></app-skill-card>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="Flask" img="/assets/skills/flask.svg"></app-skill-card>
-      </div>
+  <div class="mb-5 fade-in">
+    <h4 class="fw-semibold mb-3">Backend</h4>
+    <div class="d-flex flex-wrap gap-3">
+      <span class="badge skill-badge">Java</span>
+      <span class="badge skill-badge">Spring Boot</span>
+      <span class="badge skill-badge">Spring Security</span>
+      <span class="badge skill-badge">Node.js</span>
+      <span class="badge skill-badge">Express.js</span>
+      <span class="badge skill-badge">Python</span>
+      <span class="badge skill-badge">Flask</span>
     </div>
   </div>
 
   <!-- Databases -->
-  <div class="mb-4">
-    <h4 class="fw-semibold mb-3 text-primary">Databases</h4>
-    <div class="row g-3">
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="SQLite" img="/assets/skills/sqlite.svg"></app-skill-card>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="H2 Database" img="/assets/skills/h2database.svg"></app-skill-card>
-      </div>
+  <div class="mb-5 fade-in">
+    <h4 class="fw-semibold mb-3">Databases</h4>
+    <div class="d-flex flex-wrap gap-3">
+      <span class="badge skill-badge">SQLite</span>
+      <span class="badge skill-badge">H2 Database</span>
     </div>
   </div>
 
   <!-- Tools & Others -->
-  <div>
-    <h4 class="fw-semibold mb-3 text-primary">Tools & Others</h4>
-    <div class="row g-3">
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="Git" img="/assets/skills/git.svg"></app-skill-card>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="AWS" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"></app-skill-card>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="Jira" img="/assets/skills/jira.svg"></app-skill-card>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="Power BI" img="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg"></app-skill-card>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="C++" img="/assets/skills/cplusplus.svg"></app-skill-card>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="Kafka" img="/assets/skills/apachekafka.svg"></app-skill-card>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="Operating Systems" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"></app-skill-card>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <app-skill-card name="Computer Networks" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/networkx/networkx-original.svg"></app-skill-card>
-      </div>
+  <div class="fade-in">
+    <h4 class="fw-semibold mb-3">Tools & Others</h4>
+    <div class="d-flex flex-wrap gap-3">
+      <span class="badge skill-badge">Git</span>
+      <span class="badge skill-badge">AWS</span>
+      <span class="badge skill-badge">Jira</span>
+      <span class="badge skill-badge">Power BI</span>
+      <span class="badge skill-badge">C++</span>
+      <span class="badge skill-badge">Kafka</span>
+      <span class="badge skill-badge">Linux</span>
+      <span class="badge skill-badge">Computer Networks</span>
     </div>
   </div>
 </section>
